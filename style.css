@@ -1,0 +1,199 @@
+
+.hoo:hover{
+   border: 15px solid rgba(0, 0, 0, 0.512);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+body {
+  background-color: rgb(255, 231, 186);
+  /* background-color: rgba(0, 116, 148, 0.56); */
+}
+
+@media (min-width: 992px) {
+  .justify-content-center {
+    justify-content: center !important;
+  }
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+.rounded-circle {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+.luxury-heading {
+  font-size: 4rem; /* Initial font size for large screens */
+  color: rgb(164, 79, 23);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* text-align: center;  */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+@media (max-width: 992px) {
+  .luxury-heading {
+    font-size: 2.5rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .luxury-heading {
+    font-size: 2rem; /* Adjust font size for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .luxury-heading {
+    font-size: 1.5rem; /* Adjust font size for extra small screens */
+  }
+}
+.client-logos {
+  display: flex;
+  /* justify-content: space-around; Adjust as needed */
+  align-items: center;
+}
+
+.img-logo {
+  max-width: 50px; /* Adjust the size of logos as needed */
+  margin: 0 10px; /* Adjust spacing between logos */
+  height: 50px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+/* sec4 */
+
+.custom-card {
+  border: 20px solid #054742; /* Border style */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures image stays within border */
+  text-align: center; /* Center aligns content */
+  position: relative; /* Enables positioning of overlay */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.custom-card img {
+  max-width: 100%; /* Ensures image fills the container */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes extra space below image */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.custom-card .card-body {
+  position: absolute; /* Position overlay absolutely */
+  bottom: 0; /* Align overlay to bottom */
+  left: 0; /* Align overlay to left */
+  right: 0; /* Align overlay to right */
+  background-color: rgba(
+    6,
+    159,
+    170,
+    0.5
+  ); /* Semi-transparent black background */
+  font-weight: bold;
+  font-size: 25px;
+
+  color: rgb(241, 232, 232); /* Text color */
+  padding: 10px; /* Padding inside overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.custom-card:hover .card-body {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* buttom */
+.centered-button {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.centered-button button {
+  background-color: rgba(168, 34, 1, 0.89);
+  color: white;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.centered-button button:hover {
+  background-color: rgb(107, 2, 2);
+}
+.btn {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 200px;
+  background-color: #070336;
+  color: white;
+  padding: 16px;
+}
+.card {
+  border-radius: 10px; /* Rounded corners for the cards */
+}
+
+
+
+.card-body {
+  background-color: #04131a; /* White background for card body */
+  color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.btn-primary {
+  background-color: #0e455f; /* Blue primary button background */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.card-body {
+  background-color: inherit; /* Inherit background color from parent */
+}
+.btn-light {
+  /* background-color: #fff; White background for buttons */
+  color: #007bff; /* Blue text color for buttons */
+  /* border-color: #fff; White border color for buttons */
+}
+.color {
+  background-color: #0c4055; /* White background for card body */
+}
+
+.dotted-border {
+  border: 10px dotted #1baf9bc2; /* Dotted border with white color */
+  padding: 20px; /* Add padding for spacing inside the container */
+  border-radius: 15px; /* Rounded corners for the container */
+}
+.btns{
+background-color: #0c4055;
+padding: 15px;
+color: aliceblue;
+/* width: 30%; */
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+border-radius:8px ;
+}
+.list-unstyled{
+    color: rgb(136, 60, 17);
+    font-size: 22px;
+}
+h5{
+    color: #0e455f;
+    font-size:30px ;
+    font-weight: bold;
+}
+.icon{
+    color: rgb(154, 46, 19);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
